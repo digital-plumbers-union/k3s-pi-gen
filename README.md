@@ -1,4 +1,6 @@
-# pi-gen
+# k3s-pi-gen
+
+> Forked from [RPi-DIstro/pi-gen](https://github.com/RPi-Distro/pi-gen), original README updated as necessary.  Don't bother me.
 
 _Tool used to create the raspberrypi.org Raspbian images_
 
@@ -272,18 +274,7 @@ maintenance and allows for more easy customization.
    you were looking for something between truly minimal and Raspbian-Lite,
    here's where you start trimming.
 
- - **Stage 3** - desktop system.  Here's where you get the full desktop system
-   with X11 and LXDE, web browsers, git for development, Raspbian custom UI
-   enhancements, etc.  This is a base desktop system, with some development
-   tools installed.
-
- - **Stage 4** - Normal Raspbian image. System meant to fit on a 4GB card. This is the
-   stage that installs most things that make Raspbian friendly to new
-   users like system documentation.
-
- - **Stage 5** - The Raspbian Full image. More development
-   tools, an email client, learning tools like Scratch, specialized packages
-   like sonic-pi, office productivity, etc.  
+- Stages 3-5 are straight up removed because you're a wimp.
 
 ### Stage specification
 
