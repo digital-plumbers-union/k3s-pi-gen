@@ -38,6 +38,17 @@ The following environment variables are supported:
    but you should use something else for a customized version.  Export files
    in stages may add suffixes to `IMG_NAME`.
 
+ * `GITHUB_USERNAME` **required (_unless you skip stage2/06-import-ssh-key_)**
+
+   GitHub username to pull your public key(s) from that you would like to use to 
+   `ssh` into the Pi.  Use it.
+
+ * `STATIC_IP` **required (_unless you skip stage2/07-set-static-ip_)**
+
+   Static IP your Pi will request via DHCP.  You should do this.  Eat your 
+   vegetables.  It is good for you.
+
+
  * `APT_PROXY` (Default: unset)
 
    If you require the use of an apt proxy, set it here.  This proxy setting
