@@ -5,3 +5,7 @@
 ssh-import-id gh:"${GITHUB_USERNAME}"
 # import for your user
 ssh-import-id gh:"${GITHUB_USERNAME}" --output "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/.ssh/authorized_keys"
+# give your user permissions on output
+on_chroot << EOF
+  SUDO_USER="${FIRST_USER_NAME}" sudo chown "${FIRST_USER_NAME}":"${FIRST_USER_NAME}" -R "${ROOTFS_DIR}/home/${FIRST_USER_NAME}/.ssh"
+EOF
