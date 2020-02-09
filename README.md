@@ -4,6 +4,26 @@
 
 _Tool used to create the raspberrypi.org Raspbian images_
 
+## Gotchas
+
+### Build Machine Locale Settings
+
+If you're building on another Raspi that you setup manually, you may run into
+a bunch of `perl` errors:
+
+```
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+LANGUAGE = (unset),
+LC_ALL = (unset),
+LANG = "en_US.UTF-8"
+are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+```
+
+You may be able to resolve those errors via [this lovely fellow's issue comment](https://github.com/RPi-Distro/pi-gen/issues/125#issuecomment-369778808).
+
+
 
 ## Dependencies
 
