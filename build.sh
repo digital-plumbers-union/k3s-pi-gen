@@ -143,8 +143,8 @@ do
 	esac
 done
 
-export PI_GEN=${PI_GEN:-pi-gen}
-export PI_GEN_REPO=${PI_GEN_REPO:-https://github.com/RPi-Distro/pi-gen}
+export PI_GEN=${PI_GEN:-k3s-pi-gen}
+export PI_GEN_REPO=${PI_GEN_REPO:-https://github.com/digital-plumbers-union/k3s-pi-gen}
 
 if [ -z "${IMG_NAME}" ]; then
 	echo "IMG_NAME not set" 1>&2
@@ -170,6 +170,9 @@ export WPA_ESSID
 export WPA_PASSWORD
 export WPA_COUNTRY
 export ENABLE_SSH="${ENABLE_SSH:-0}"
+# added by the union 
+export GITHUB_USERNAME
+export STATIC_IP
 
 export LOCALE_DEFAULT="${LOCALE_DEFAULT:-en_GB.UTF-8}"
 
