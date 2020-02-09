@@ -24,3 +24,7 @@ network={
 }
 EOL
 fi
+
+# hack to fix sshd_config, learn to use quilt instead
+echo "PasswordAuthentication no" >> "${ROOTFS_DIR}/etc/ssh/sshd_config"
+echo "PubkeyAuthentication yes" >> "${ROOTFS_DIR}/etc/ssh/sshd_config"
