@@ -68,6 +68,14 @@ The following environment variables are supported:
    Static IP your Pi will request via DHCP.  You should do this.  Eat your 
    vegetables.  It is good for you.
 
+ * `ROUTER_IP` **required (_unless you skip stage2/07-set-static-ip_)**
+
+   The router IP your Pi will be connecting to for its DHCP lease.
+   
+ * `SECONDARY_DNS` **required (_unless you skip stage2/07-set-static-ip_)**
+
+   Additional DNS IP to be added to static IP configuration (`ROUTER_IP` is 
+   always added first). Defaults to `8.8.8.8`.
 
  * `APT_PROXY` (Default: unset)
 
