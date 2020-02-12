@@ -172,6 +172,9 @@ export WPA_COUNTRY
 export ENABLE_SSH="${ENABLE_SSH:-0}"
 # added by the union 
 export GITHUB_USERNAME
+export STATIC_IP
+export ROUTER_IP
+export SECONDARY_DNS=${SECONDARY_DNS:-'8.8.8.8'}
 
 export LOCALE_DEFAULT="${LOCALE_DEFAULT:-en_GB.UTF-8}"
 
